@@ -22,5 +22,12 @@ $cli->endereco = "São Paulo";
 $cli->telefone = "(11) - xxxxx-xxxx";
 $cli->compra();
 
+//Instanciando objetos dinamicamente
+
+$nomeClasse = "Cliente";
+
+$instacia = new $nomeClasse;
+var_dump($instacia);
+
 
 
