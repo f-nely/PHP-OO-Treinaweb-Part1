@@ -3,6 +3,8 @@
 
 class Fornecedor
 {
+    public const PAIS = "Brasil";
+
     public $razaoSocial;
 
     public $nomeFantasia;
