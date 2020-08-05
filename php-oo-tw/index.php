@@ -24,10 +24,18 @@ $cli->compra();
 
 //Instanciando objetos dinamicamente
 
-$nomeClasse = "Cliente";
+$nomeClasse = "Produto";
 
 $instacia = new $nomeClasse;
 var_dump($instacia);
+
+$cli2 = new $cli;
+
+$nomeClasse2 = get_class($cli);
+$cli3 = new $nomeClasse2;
+$cli3->nome = "Howard";
+
+var_dump($cli, $cli2, $cli3);
 
 
 
