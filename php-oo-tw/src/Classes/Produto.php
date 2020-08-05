@@ -5,7 +5,7 @@ class Produto
 {
     public $titulo;
 
-    public $descricao;
+    public $descricao = "Cerveja Brasileira";
 
     public $preco;
 }
