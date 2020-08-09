@@ -4,8 +4,13 @@ require_once '/home/nelynely/PhpstormProjects/php-oo-tw/src/Classes/Fornecedor.p
 
 $fornecedor = new Fornecedor();
 
-$fornecedor->autoriza(new class {
-    public $nome = "James";
-    public $senha = "525";
-});
+try {
+    $fornecedor->autoriza(new class {
+        public $nome = "James";
+        public $senha = "525";
+    });
+} catch (TypeError $error) {
+    echo $error->getMessage();
+    echo $error->getLine();
+}
 
