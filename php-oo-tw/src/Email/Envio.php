@@ -20,6 +20,16 @@ class Envio
 
         var_dump($adaptador, $transporte, $obj, $customer);
     }
+
+    public function m1()
+    {
+        $adaptador = new Adaptadores\Mailgun\Adaptador;
+    }
+
+    public function m2()
+    {
+        $adaptador = new Adaptadores\Mailgun\Adaptador;
+    }
 }
 
 function valida(string $email): void
