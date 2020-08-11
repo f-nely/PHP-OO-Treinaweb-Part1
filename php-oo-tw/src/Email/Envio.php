@@ -10,7 +10,10 @@ class Envio
     {
         //namaspace relativo
         $adaptador = new Adaptadores\Mailgun\Adaptador;
-        var_dump($adaptador);
+
+        $transporte = new Transporte();
+
+        var_dump($adaptador, $transporte);
     }
 }
 
