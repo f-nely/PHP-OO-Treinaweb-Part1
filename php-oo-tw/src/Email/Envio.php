@@ -2,7 +2,8 @@
 
 namespace App\Email;
 
-use App\Email\Adaptadores\Mailgun\Adaptador;
+use App\Email\Adaptadores\Mailgun\Adaptador as Mailgun;
+use App\Email\Adaptadores\Mailgun\Adaptador as SES;
 
 const VERSION = 1.0;
 
@@ -11,7 +12,7 @@ class Envio
     public function envia(): void
     {
         //namaspace relativo
-        $adaptador = new Adaptadores\Mailgun\Adaptador;
+        $adaptador = new Mailgun;
 
         $transporte = new Transporte();
 
@@ -25,12 +26,12 @@ class Envio
 
     public function m1()
     {
-        $adaptador = new Adaptador;
+        $adaptador = new Mailgun;
     }
 
     public function m2()
     {
-        $adaptador = new Adaptador;
+        $adaptador = new SES;
     }
 }
 
