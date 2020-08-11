@@ -8,8 +8,8 @@ class Envio
 {
     public function envia(): void
     {
-        //namaspace completo
-        $adaptador = new \App\Email\Adaptadores\Mailgun\Adaptador;
+        //namaspace relativo
+        $adaptador = new Adaptadores\Mailgun\Adaptador;
         var_dump($adaptador);
     }
 }
