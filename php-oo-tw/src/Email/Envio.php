@@ -2,6 +2,8 @@
 
 namespace App\Email;
 
+use App\Email\Adaptadores\Mailgun\Adaptador;
+
 const VERSION = 1.0;
 
 class Envio
@@ -23,12 +25,12 @@ class Envio
 
     public function m1()
     {
-        $adaptador = new Adaptadores\Mailgun\Adaptador;
+        $adaptador = new Adaptador;
     }
 
     public function m2()
     {
-        $adaptador = new Adaptadores\Mailgun\Adaptador;
+        $adaptador = new Adaptador;
     }
 }
 
