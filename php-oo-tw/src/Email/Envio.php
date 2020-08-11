@@ -13,7 +13,12 @@ class Envio
 
         $transporte = new Transporte();
 
-        var_dump($adaptador, $transporte);
+        //namespace global
+        $obj = new \stdClass();
+
+        $customer = new \Cliente();
+
+        var_dump($adaptador, $transporte, $obj, $customer);
     }
 }
 
